@@ -1,5 +1,5 @@
 <?php
 
-namespace Anhskohbo\UConvert\Exceptions;
+namespace UConvert\Exceptions;
 
 class MapDataException extends \Exception {}

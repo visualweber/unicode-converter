@@ -1,6 +1,6 @@
 <?php
 
-use Anhskohbo\UConvert\UConvert;
+use UConvert\UConvert;
 
 class UConvertTest extends PHPUnit_Framework_TestCase {
 

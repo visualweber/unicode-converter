@@ -1,9 +1,9 @@
 <?php
 
-namespace Anhskohbo\UConvert;
+namespace UConvert;
 
-use Anhskohbo\UConvert\Exceptions\MapDataException;
-use Anhskohbo\UConvert\Exceptions\DetectCharacterException;
+use UConvert\Exceptions\MapDataException;
+use UConvert\Exceptions\DetectCharacterException;
 
 class UConvert implements UConvertInterface {
 

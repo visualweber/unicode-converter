@@ -1,6 +1,6 @@
 <?php
 
-namespace Anhskohbo\UConvert;
+namespace UConvert;
 
 interface UConvertInterface {
 
