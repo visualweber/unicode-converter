@@ -37,7 +37,7 @@ composer update
 
 Nếu bạn chưa quen với Composer vì lý do gì, UConvert cho bạn một cách thủ công để nhúng nó vào dự án của bạn.
 
-Đầu tiên, tải UConvert tại [đây](https://github.com/visualweber/unicode-converter/archive/master.zip):
+Đầu tiên, tải UConvert : (https://github.com/visualweber/unicode-converter/archive/master.zip):
 
 Giải nén tập tin và bạn nên để tên thư mục chứa mã nguồn là `u-convert`. Ném nó vào thư mục chứa thư viện bên thứ 3 của bạn hoặc bất cứ nơi đâu bạn thích :)
 
