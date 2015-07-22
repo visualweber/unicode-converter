@@ -13,19 +13,17 @@ UConvert hiện tại cho phép bạn chuyển đổi qua lại giữa các bả
 
 Sẽ sớm hỗ trợ các bảng mã còn lại trong tương lai.
 
-Dữ liệu được dùng để chuyển đổi trong UConvert được lấy từ địa chỉ: [http://vietunicode.sourceforge.net/charset](http://vietunicode.sourceforge.net/charset)
-
 ## Cài đặt
 
-UConvert có sẵn trên [Github](https://github.com/anhskohbo) và [Packagist](https://packagist.org/packages/anhskohbo/u-convert), vậy nên bạn có thể cài đặt nó qua 2 cách cơ bản:
+UConvert có sẵn trên [Github](https://github.com/unicode-converter) và 
 
 ### Qua Composer
 
-Nếu bạn sử dụng [Composer](https://getcomposer.org/) để quản lý thư viện cho dự án của mình, một cách dễ dàng nhất, thêm `"anhskohbo/u-convert": "dev-master"` vào phần `require` trong file `composer.json`:
+Nếu bạn sử dụng [Composer](https://getcomposer.org/) để quản lý thư viện cho dự án của mình, một cách dễ dàng nhất, thêm `"visualweber/unicode-converter": "dev-master"` vào phần `require` trong file `composer.json`:
 
 ```
 "require": {
-	"anhskohbo/u-convert": "dev-master"
+	"visualweber/unicode-converter": "dev-master"
 }
 ```
 
@@ -39,7 +37,7 @@ composer update
 
 Nếu bạn chưa quen với Composer vì lý do gì, UConvert cho bạn một cách thủ công để nhúng nó vào dự án của bạn.
 
-Đầu tiên, tải UConvert tại [đây](https://github.com/anhskohbo/u-convert/archive/master.zip):
+Đầu tiên, tải UConvert tại [đây](https://github.com/visualweber/unicode-converter/archive/master.zip):
 
 Giải nén tập tin và bạn nên để tên thư mục chứa mã nguồn là `u-convert`. Ném nó vào thư mục chứa thư viện bên thứ 3 của bạn hoặc bất cứ nơi đâu bạn thích :)
 
@@ -61,12 +59,12 @@ Trước khi vào phần sử dụng bạn cần biết tên chuẩn của các 
 
 Tất cả các tên bảng mã đều *phải* viết **HOA** và liền không dấu. Ví dụ *UNICODE*, *VNI*, *TCVN3*, *VIQR*...
 
-Trong lớp `Anhskohbo\UConvert\UConvert` một số hằng được khai báo giúp bạn nhất quán trong việc gọi tên bảng mã:
+Trong lớp `UConvert\UConvert` một số hằng được khai báo giúp bạn nhất quán trong việc gọi tên bảng mã:
 
 ```php
 <?php
 
-namespace Anhskohbo\UConvert;
+namespace UConvert;
 
 class UConvert implements UConvertInterface {
 
@@ -85,7 +83,7 @@ UConvert cung cấp một cách rất dễ dàng để sử dụng, hãy xem m�
 <?php
 // Autoload library...
 
-use Anhskohbo\UConvert\UConvert;
+use UConvert\UConvert;
 
 $vni_string = "Xin chaøo theá giôùi";
 
@@ -100,7 +98,7 @@ echo $convert->transform(UConvert::UNICODE);
 
 Construct của UConvert chấp nhận 2 đối số:
 
-`Anhskohbo\UConvert\UConvert( string $text, string $character)`
+`UConvert\UConvert( string $text, string $character)`
 
 `$text`: Nội dung bạn muốn chuyển đổi.
 
@@ -119,7 +117,7 @@ Dưới đây là một ví dụ gọi trực tiếp kiểu static:
 ```php
 <?php
 
-use Anhskohbo\UConvert\UConvert;
+use UConvert\UConvert;
 
 UConvert::toUnicode($vni, UConvert::VIQR);
 
@@ -141,4 +139,4 @@ Convert::toViqr($tcvn3, UConvert::TCVN3);
 ## Đóng góp
 
 Nếu bạn có bất kỳ chỉnh sửa, thêm mới... bạn có thể:
-Gửi pull-request tại: [https://github.com/anhskohbo/u-convert/pulls](https://github.com/anhskohbo/u-convert/pulls)
+Gửi pull-request tại: [https://github.com/visualweber/unicode-converter/pulls](https://github.com/visualweber/unicode-converter/pulls)
