@@ -15,7 +15,7 @@ Sẽ sớm hỗ trợ các bảng mã còn lại trong tương lai.
 
 ## Cài đặt
 
-UConvert có sẵn trên [Github](https://github.com/unicode-converter) và 
+UConvert có sẵn trên [Github](https://github.com/visualweber/unicode-converter) và 
 
 ### Qua Composer
 
